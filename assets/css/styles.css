@@ -1,0 +1,54 @@
+:root{
+    --distant-background: rgb(153, 156, 179);
+    --background: rgb(118, 110, 138);
+    --header-text: rgb(90, 2, 2);
+    --text: rgb(58, 53, 10);
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header section (mostly a ripoff of the module 1 challenge starter code) */
+/* (If there's time, there is probably a way to change the <ul> to some <p>s, and use flexbox to center the links (like with justify-content: space-between) */
+
+.header {
+    padding: 0.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--distant-background);
+    color: var(--text);
+}
+
+.header-h1 {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0.4rem;
+}
+
+.header-ul {
+    list-style-type: none;
+    box-sizing: inline-flex;
+    background-color: var(--distant-background);
+    margin: 1rem 0.3rem;
+    padding: 0.1rem;
+    float: right;
+}
+
+.header-ul li {
+    display: inline-flex;
+    margin-left: 0.6rem;
+    margin-right: 0.4rem
+}
+
+.header-image{
+    width: 100%;
+    height: 463px;
+    margin-bottom: 1rem;
+    background-image: url("../images/diplodocus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
