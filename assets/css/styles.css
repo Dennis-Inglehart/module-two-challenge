@@ -2,23 +2,25 @@
     --distant-background: rgb(153, 156, 179);
     --background: rgb(118, 110, 138);
     --header-text: rgb(90, 2, 2);
-    --text: rgb(58, 53, 10);
+    --text: rgb(83, 77, 17);
+    --border: rgb(44, 5, 34); /* unused, but it might come in handy */
 }
 
+/* instead of a proper reset.css*/
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: var(--distant-background);
 }
 
-/* Header section (mostly a ripoff of the module 1 challenge starter code) */
-/* (If there's time, there is probably a way to change the <ul> to some <p>s, and use flexbox to center the links (like with justify-content: space-between) */
+/*  Header section (mostly a ripoff of the module 1 challenge starter code,
+    but with added media queries, and with px measurements replaced with rem measurements) */
 
 .header {
     padding: 0.2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--distant-background);
     color: var(--text);
 }
 
@@ -31,7 +33,6 @@
 .header-ul {
     list-style-type: none;
     box-sizing: inline-flex;
-    background-color: var(--distant-background);
     margin: 1rem 0.3rem;
     padding: 0.1rem;
     float: right;
@@ -51,4 +52,67 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* the rest of the body */
+
+.card-section{ /* there are 2 of these: one for the jumbo card, and one for all other cards */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0.4rem 0.6rem;
+}
+
+.jumbo-card{
+    position: relative;
+    border-color: var(--background);
+    border-style: solid;
+    border-width: 0.3rem;
+    margin: 0.6rem 0rem;
+    width:100%;
+    height: 200px;
+    background-image: url("../images/200px-sky-blue-placeholder.png");
+    background-size: cover;
+}
+
+.flex-card{ /* the little cards in a grid, beneath the jumbo card*/
+    position: relative;
+    border-color: var(--background);
+    border-style: solid;
+    border-width: 0.3rem;
+    margin: 0.6rem 0rem;
+    max-width: 46%;
+    height: auto;
+}
+
+.card-text{ /* the text blocks that live in the middle of the left side of the cards */
+    position: absolute;
+    padding: 0.2rem;
+    left: 0rem;
+    bottom: 50%;
+    background-color: var(--background);
+    color: var(--text)
+}
+
+/* footer */
+
+.footer-heading{
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--text);
+}
+/* media queries */
+
+@media (min-width: 992px){
+    .header-image{
+        background-size: cover;      /* makes the header image stretch out on bigger monitors*/
+        background-position: 0% 36%; /* crops off the bottom of the header image, instead of the top*/
+    }
+    .card{
+        max-width: 60%; /* not sure if this does anything */
+    }
 }
