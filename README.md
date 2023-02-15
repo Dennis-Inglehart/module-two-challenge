@@ -1,5 +1,4 @@
 # Professional Portfolio
-<font-color="pink">
 
 ## Portfolio of the Works of Dennis Inglehart
 
@@ -12,4 +11,5 @@ The site is made with HTML and CSS, and behaves differently on different platfor
 <hr>
 <h3 style="text-align: center;">A screencapture of the page in a normal Chrome window:</h3>
 <br />
-<img src="readme-sceencap.png" alt="screencap"/>
+
+![module two challenge screencap](/readme-screencap.png)

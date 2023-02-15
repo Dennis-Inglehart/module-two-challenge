@@ -7,7 +7,7 @@
     --hover-shadow: rgb(83, 70, 11);
 }
 
-/* instead of a proper reset.css*/
+/* global settings */
 
 * {
     box-sizing: border-box;
@@ -66,7 +66,7 @@
     margin: 0.4rem 0.6rem;
 }
 
-.jumbo-card{
+.jumbo-card{ /* meant to have limitless width, but restricted to the same height as the square cards */
     position: relative;
     border-color: var(--background);
     border-style: solid;
