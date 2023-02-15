@@ -3,7 +3,8 @@
     --background: rgb(118, 110, 138);
     --header-text: rgb(90, 2, 2);
     --text: rgb(252, 243, 151);
-    --border: rgb(44, 5, 34); /* unused, but it might come in handy */
+    --border: rgb(44, 5, 34); /* unused, but it might come in handy one day*/
+    --hover-shadow: rgb(83, 70, 11);
 }
 
 /* instead of a proper reset.css*/
@@ -73,9 +74,14 @@
     margin: 0.6rem 0rem;
     width:100%;
     height: 200px;
-    background-image: url("../images/200px-sky-blue-placeholder.png");
+    background-image: url("../images/jumbo-screencap.png");
     background-size: cover;
+    font-weight:bold;
 }
+
+.jumbo-card:hover {
+    box-shadow: inset 0rem 0rem 1rem var(--hover-shadow), 0 0 1rem var(--hover-shadow);
+  }
 
 .flex-card{ /* the little cards in a grid, beneath the jumbo card*/
     position: relative;
@@ -86,6 +92,10 @@
     max-width: 46%;
     height: auto;
 }
+
+.flex-card:hover {
+    box-shadow: inset 0rem 0rem 1rem var(--hover-shadow), 0 0 1rem var(--hover-shadow);
+  }
 
 .card-text{ /* the text blocks that live in the middle of the left side of the cards */
     position: absolute;
@@ -111,6 +121,10 @@
     .header-image{
         background-size: cover;      /* makes the header image stretch out on bigger monitors*/
         background-position: 0% 36%; /* crops off the bottom of the header image, instead of the top*/
+    }
+    .jumbo-card{
+        background-size: auto;
+        background-position: left;
     }
     .card{
         max-width: 60%; /* not sure if this does anything */
