@@ -1,77 +1,15 @@
 # Professional Portfolio
-<font color ="pink">
+<font-color="pink">
 
-## Assignment description:</font>
+## Portfolio of the Works of Dennis Inglehart
 
-https://courses.bootcampspot.com/courses/3112/assignments/49428?module_item_id=898345
-<font color ="pink">
+A simple, one-page website with internal links to contact and resume information, and external links to projects Dennis Inglehart worked on.
 
-## Grading rubrik:
+So far, most of the "project" links are arbitrary placeholders. The reason for this is that, for the page design to make any sense, more project links than actually exist were needed (i.e. more than 2 links).
 
-## 40% (technical):
+The site is made with HTML and CSS, and behaves differently on different platforms, employing a "mobile first" design philosophy
 
-### User Story:</font>
-
-AS AN employer
-
-I WANT to view a potential employee's deployed portfolio of work samples
-
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-<font color ="pink">
-
-### Acceptance Criteria:</font>
-
-GIVEN I need to sample a potential employee's previous work
-
-WHEN I load their portfolio
-
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-
-WHEN I click one of the links in the navigation
-
-THEN the UI scrolls to the corresponding section
-
-WHEN I click on the link to the section about their work
-
-THEN the UI scrolls to a section with titled images of the developer's applications
-
-WHEN I am presented with the developer's first application
-
-THEN that application's image should be larger in size than the others
-
-WHEN I click on the images of the applications
-
-THEN I am taken to that deployed application
-
-WHEN I resize the page or view the site on various screens and devices
-
-THEN I am presented with a responsive layout that adapts to my viewport
-<font color ="pink">
-
-## 32% (deployment):</font>
-
-Application deployed at live URL.
-
-Application loads with no errors.
-
-Application GitHub URL submitted.
-
-GitHub repository contains application code.
-<font color ="pink">
-
-## 15% (quality):</font>
-
-Application resembles the mock-up functionality provided in the Challenge instructions.
-<font color ="pink">
-
-## 13% (repository):</font>
-
-Repository has a unique name.
-
-Repository follows best practices for file structure and naming conventions.
-
-Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-Repository contains multiple descriptive commit messages.
-
-Repository contains a quality readme with description, screenshot, link to deployed application.
+<hr>
+<h3 style="text-align: center;">A screencapture of the page in a normal Chrome window:</h3>
+<br />
+<img src="readme-sceencap.png" alt="screencap"/>
