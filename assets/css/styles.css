@@ -126,7 +126,11 @@
         background-size: auto;
         background-position: left;
     }
-    .card{
-        max-width: 60%; /* not sure if this does anything */
+    .flex-card{
+        min-width: 18%;
+    }
+
+    .card-text{
+        font-size: 2rem;
     }
 }
