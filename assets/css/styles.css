@@ -2,7 +2,7 @@
     --distant-background: rgb(153, 156, 179);
     --background: rgb(118, 110, 138);
     --header-text: rgb(90, 2, 2);
-    --text: rgb(83, 77, 17);
+    --text: rgb(252, 243, 151);
     --border: rgb(44, 5, 34); /* unused, but it might come in handy */
 }
 
@@ -21,7 +21,7 @@
 .header {
     padding: 0.2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--text);
+    color: var(--header-text);
 }
 
 .header-h1 {
@@ -89,7 +89,7 @@
 
 .card-text{ /* the text blocks that live in the middle of the left side of the cards */
     position: absolute;
-    padding: 0.2rem;
+    padding: 0.4rem 1rem 0.3rem 0.4rem;
     left: 0rem;
     bottom: 50%;
     background-color: var(--background);
